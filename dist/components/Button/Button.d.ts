@@ -7,7 +7,7 @@ declare const Button: (props: ButtonProps) => import("react").DetailedReactHTMLE
     suppressContentEditableWarning?: boolean | undefined;
     suppressHydrationWarning?: boolean | undefined;
     accessKey?: string | undefined;
-    contentEditable?: (boolean | "true" | "false") | "inherit" | undefined;
+    contentEditable?: "inherit" | (boolean | "true" | "false") | undefined;
     contextMenu?: string | undefined;
     dir?: string | undefined;
     draggable?: (boolean | "true" | "false") | undefined;
@@ -19,7 +19,7 @@ declare const Button: (props: ButtonProps) => import("react").DetailedReactHTMLE
     spellCheck?: (boolean | "true" | "false") | undefined;
     tabIndex?: number | undefined;
     title?: string | undefined;
-    translate?: "yes" | "no" | undefined;
+    translate?: "no" | "yes" | undefined;
     radioGroup?: string | undefined;
     role?: import("react").AriaRole | undefined;
     about?: string | undefined;
@@ -42,7 +42,7 @@ declare const Button: (props: ButtonProps) => import("react").DetailedReactHTMLE
     results?: number | undefined;
     security?: string | undefined;
     unselectable?: "on" | "off" | undefined;
-    inputMode?: "search" | "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
+    inputMode?: "search" | "text" | "none" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
     is?: string | undefined;
     'aria-activedescendant'?: string | undefined;
     'aria-atomic'?: (boolean | "true" | "false") | undefined;
@@ -56,7 +56,7 @@ declare const Button: (props: ButtonProps) => import("react").DetailedReactHTMLE
     'aria-current'?: boolean | "true" | "false" | "time" | "page" | "step" | "location" | "date" | undefined;
     'aria-describedby'?: string | undefined;
     'aria-details'?: string | undefined;
-    'aria-disabled'?: (boolean | "true" | "false") | undefined;
+    "aria-disabled": (boolean | "true" | "false") | undefined;
     'aria-dropeffect'?: "link" | "none" | "copy" | "execute" | "move" | "popup" | undefined;
     'aria-errormessage'?: string | undefined;
     'aria-expanded'?: (boolean | "true" | "false") | undefined;
@@ -257,6 +257,7 @@ declare const Button: (props: ButtonProps) => import("react").DetailedReactHTMLE
     onTransitionEndCapture?: import("react").TransitionEventHandler<HTMLButtonElement> | undefined;
     className: string | undefined;
     style: import("react").CSSProperties | undefined;
+    disabled: boolean | undefined;
 }, HTMLButtonElement>;
 export default Button;
 //# sourceMappingURL=Button.d.ts.map

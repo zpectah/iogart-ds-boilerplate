@@ -1,0 +1,22 @@
+action-on-hover(bg)
+  &::before
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color .125s ease-in-out 0s;
+
+  &:not(:disabled):hover
+    position: relative;
+    overflow: hidden;
+
+    &::before
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: bg;
+
+
+action-on-focus()
+  margin: initial; // TODO

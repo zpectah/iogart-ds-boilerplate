@@ -4,19 +4,25 @@ import { useButtonStyles } from './useButtonStyles';
 import { useButton } from './useButton';
 
 const Button = (props: ButtonProps) => {
-  const { children, className, style, ...restOf } = props;
+  const { children, className, style, variant, size, pill, loading, startIcon, endIcon, disabled, ...restOf } = props;
 
-  const { className: composedClassName, style: composedStyle } = useButtonStyles({ className, style });
-  const {} = useButton({});
+  const {
+    className: composedClassName,
+    style: composedStyle,
+    preloaderClassName,
+  } = useButtonStyles({ className, style, variant, size, pill, loading, disabled });
+  const { children: composedChildren } = useButton({ children, startIcon, endIcon, loading, preloaderClassName });
 
   return createElement(
     'button',
     {
       className: composedClassName,
       style: composedStyle,
+      disabled: disabled,
+      ['aria-disabled']: disabled,
       ...restOf,
     },
-    children
+    composedChildren
   );
 };
 

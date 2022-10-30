@@ -1,5 +1,66 @@
+@import '../../../core/src/styles/mixins/shapes.styl';
+@import '../../../core/src/styles/mixins/actions.styl';
+@import '../../../core/src/styles/mixins/typography.styl';
+
 .button
-  margin: 0;
-  padding: 0;
-  border: none;
+  shape-like-button(1rem);
+  font-family-root(600);
+  action-on-hover(rgba(25, 25, 25, .07));
+
+  border: 1px solid transparent;
   background-color: transparent;
+  border-radius: .25rem;
+  cursor: pointer;
+  vertical-align: middle;
+
+  & + &
+    margin-left: .35rem;
+
+  /* Size */
+  &.small
+    min-height: 34px; // TODO #variable
+    font-size: .825rem;
+    line-height: 1.05;
+
+  &.medium
+    min-height: 40px; // TODO #variable
+    font-size: 1rem;
+    line-height: 1.15;
+
+  &.large
+    min-height: 46px; // TODO #variable
+    font-size: 1.105rem;
+    line-height: 1.25;
+
+  /* Variant (.default is not defined) */
+  &.outlined
+    shape-outlined(rgba(25, 25, 25, .75))
+
+  &.contained
+    shape-contained(rgb(25, 25, 25), rgb(250, 250, 250))
+
+  /* Pill shape */
+  &.pill
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border-radius: 5rem;
+
+  /* Loading state */
+  &.loading
+    position: relative;
+    overflow: hidden;
+
+    .preloader
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(200, 200, 200, .5);
+
+  /* Disabled state */
+  &.disabled
+    opacity: .5; // TODO

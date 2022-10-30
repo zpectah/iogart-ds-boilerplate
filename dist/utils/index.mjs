@@ -1,12 +1,13 @@
-const n = (...s) => {
-  const r = (e) => e && typeof e == "object";
-  return s.reduce((e, o) => (Object.keys(o).forEach((t) => {
-    const a = e[t], c = o[t];
-    Array.isArray(a) && Array.isArray(c) ? e[t] = a.concat(...c) : r(a) && r(c) ? e[t] = n(a, c) : e[t] = c;
+const l = (...c) => {
+  const t = (e) => e && typeof e == "object";
+  return c.reduce((e, o) => (Object.keys(o).forEach((s) => {
+    const a = e[s], r = o[s];
+    Array.isArray(a) && Array.isArray(r) ? e[s] = a.concat(...r) : t(a) && t(r) ? e[s] = l(a, r) : e[s] = r;
   }), e), {});
-}, i = (s) => s.replace(/^\w/, (r) => r.toUpperCase());
+}, n = (c) => c.replace(/^\w/, (t) => t.toUpperCase()), i = (c) => [...c].join(" ").replaceAll("  ", " ").replace(/\s+$/g, "");
 export {
-  i as capitalize,
-  n as mergeDeep
+  n as capitalize,
+  i as classNamesFromList,
+  l as mergeDeep
 };
 //# sourceMappingURL=index.mjs.map

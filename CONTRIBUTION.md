@@ -15,7 +15,7 @@ Before every commit to git, please run these tasks:
 2) `% yarn linter:packages`
 3) `% yarn test`
 4) Fix any deficiencies detected by tests and linter
-5) `% build:packages`
+5) `% yarn build:packages`
 6) Commit now
 
 ## How to, what to do when
