@@ -1,1 +1,1 @@
-{"version":3,"file":"useTag.d.ts","sourceRoot":"","sources":["../../../packages/components/src/Tag/useTag.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,YAAY,EAAE,MAAM,SAAS,CAAC;AAEpD,eAAO,MAAM,MAAM,OAAQ,WAAW,KAAG,YAGxC,CAAC"}
+{"version":3,"file":"useTag.d.ts","sourceRoot":"","sources":["../../../packages/components/src/Tag/useTag.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,YAAY,EAAE,MAAM,SAAS,CAAC;AAEpD,eAAO,MAAM,MAAM,OAAQ,WAAW,KAAG,YAExC,CAAC"}

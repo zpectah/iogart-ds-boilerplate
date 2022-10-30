@@ -22,8 +22,8 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@ladle/react": "^2.4.5",
-    "lerna": "^6.0.0"
+    "@ladle/react": "2.4.5",
+    "lerna": "6.0.0"
   },
   "peerDependencies": {
     "@iogart-ds-boilerplate/components": "*",

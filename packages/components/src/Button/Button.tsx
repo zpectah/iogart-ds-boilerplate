@@ -16,7 +16,7 @@ const Button = (props: ButtonProps) => {
       style: composedStyle,
       ...restOf,
     },
-    children,
+    children
   );
 };
 

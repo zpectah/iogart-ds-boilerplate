@@ -14,7 +14,6 @@ declare const Button: (props: ButtonProps) => import("react").DetailedReactHTMLE
     hidden?: boolean | undefined;
     id?: string | undefined;
     lang?: string | undefined;
-    nonce?: string | undefined;
     placeholder?: string | undefined;
     slot?: string | undefined;
     spellCheck?: (boolean | "true" | "false") | undefined;

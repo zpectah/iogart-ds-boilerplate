@@ -6,7 +6,7 @@ export const useButtonStyles = ({ ...rest }: UseButtonStylesProps): UseButtonSty
   const { className, style } = useStyleProps({ ...rest });
 
   return {
-    className: [ styles.button, className ].join(' '),
+    className: [styles.button, className].join(' '),
     style: Object.assign({}, style),
   };
 };

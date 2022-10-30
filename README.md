@@ -20,60 +20,33 @@ wide customization options.
 
 ## Scripts
 
-### Bootstrap
+### Bootstrap project
 - `% yarn bootstrap`: Installing packages and bootstrapping modules
 
 ### Packages
-- `% yarn start:packages`: Starts development for 'packages/*'
-- `% yarn build:packages`: Build all packages
 - `% yarn linter:packages`: Check packages with linter
 - `% yarn prettier:packages`: Prettier and fix packages
+- `% yarn build:packages`: Build all packages
+- `% yarn start:packages`: Starts development for 'packages/*'
 
 ### Ladle
 - `% yarn start:ladle`: Starts preview server with Ladle for development and documentation
 - `% yarn build:ladle`: Builds Ladle package
 
-### Preview
-- `% yarn start:preview`: Starts preview server for bundle testing
-- `% yarn build:preview`: Builds preview package
+## Tests
+More information about the tests can be found [here](./tests/README.md)
+
+## Preview
+More information about the preview can be found [here](./preview/README.md)
 
 ## Packages
 
 | Name | Path | Contains | Status | Description |
 |------|------|----------|--------|-------------|
-| components | `/packages/components` | [components, types] | -- | Root of JSX components |
-| core | `/packages/core` | [constants, enums, hooks, styles, types] | -- | Common for DS |
-| icons | `/packages/icons` | [svg icons] | -- | Root of SVG icons and spinners |
-| utils | `/packages/utils` | [helper functions] | -- | Utility functions and helpers |
+| components | `/packages/components` | [components, types] | -- | Root of JSX components [...more](./packages/components/README.md) |
+| core | `/packages/core` | [constants, enums, hooks, styles, types] | -- | Common for DS [...more](./packages/core/README.md) |
+| icons | `/packages/icons` | [svg icons] | -- | Root of SVG icons and spinners [...more](./packages/icons/README.md) |
+| utils | `/packages/utils` | [helper functions] | -- | Utility functions and helpers [...more](./packages/utils/README.md) |
 
-### Core
-Core package provides common constants, enumerations, hooks, types and also styles.
-
-### Utils
-Utils package provides utility and helper functions.
-
-### Components
-Components package provides basic set of reusable components.
-...list of components
-
-### Icons
-Icons package provides basic set of reusable icons and spinners.
-...list of icons and spinners
-
-## Preview
-Preview package provides preview bundled packages for proper testing and debugging.
-
-## How to
-
-### 1) Start development
-- A) Development with focus on results, open two separate terminal windows:
-  - `% yarn start:packages` on first one to watch changes in source
-  - `% yarn start:preview` on second one to open preview for bundle results
-  - Maybe I will prepare `stmux` for run in one terminal window
-- B) Classic development, so only one terminal would be enough
-  - `% yarn start:ladle` to start Ladle development server
-
-### 2) Install new module dependencies to packages
-`% yarn lerna add <module> <flags> --scope=<package>`
-
-This will install `<module>` only in scope of `<package>`.
+## Contribution
+More information about contribution can be found [here](./CONTRIBUTION.md)

@@ -3,7 +3,7 @@ import { TagProps } from './types';
 import { useTagStyles } from './useTagStyles';
 import { useTag } from './useTag';
 
-const Tag: FC<TagProps>  = (props) => {
+const Tag: FC<TagProps> = (props) => {
   const { children, className, style } = props;
 
   const { className: composedClassName, style: composedStyle } = useTagStyles({ className, style });
@@ -15,7 +15,7 @@ const Tag: FC<TagProps>  = (props) => {
       className: composedClassName,
       style: composedStyle,
     },
-    children,
+    children
   );
 };
 

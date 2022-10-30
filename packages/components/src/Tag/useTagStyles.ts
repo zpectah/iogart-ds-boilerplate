@@ -6,7 +6,7 @@ export const useTagStyles = ({ ...rest }: UseTagStylesProps): UseTagStylesReturn
   const { className, style } = useStyleProps({ ...rest });
 
   return {
-    className: [ styles.tag, className ].join(' '),
+    className: [styles.tag, className].join(' '),
     style: Object.assign({}, style),
   };
 };
