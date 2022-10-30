@@ -1,0 +1,1 @@
+yarn lerna run build --scope=@iogart-ds-boilerplate/preview && yarn lerna run start --scope=@iogart-ds-boilerplate/preview

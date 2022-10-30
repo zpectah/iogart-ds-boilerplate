@@ -1,0 +1,33 @@
+{
+  "name": "iogart-ds-boilerplate",
+  "version": "0.0.0",
+  "description": "Iogart Design System Boilerplate for React",
+  "author": "Tomas Sychra | zpecter.com",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "preview"
+  ],
+  "scripts": {
+    "bootstrap": "/bin/sh ./scripts/bootstrap.sh",
+    "start:packages": "/bin/sh ./scripts/packages-start.sh",
+    "build:packages": "/bin/sh ./scripts/packages-build.sh",
+    "linter:packages": "/bin/sh ./scripts/packages-linter.sh",
+    "prettier:packages": "/bin/sh ./scripts/packages-prettier.sh",
+    "start:preview": "/bin/sh ./scripts/preview-start.sh",
+    "build:preview": "/bin/sh ./scripts/preview-build.sh",
+    "start:ladle": "/bin/sh ./scripts/ladle-start.sh",
+    "build:ladle": "/bin/sh ./scripts/ladle-build.sh"
+  },
+  "devDependencies": {
+    "@ladle/react": "^2.4.5",
+    "lerna": "^6.0.0"
+  },
+  "dependencies": {
+    "@iogart-ds-boilerplate/components": "*",
+    "@iogart-ds-boilerplate/core": "*",
+    "@iogart-ds-boilerplate/icons": "*",
+    "@iogart-ds-boilerplate/utils": "*"
+  }
+}

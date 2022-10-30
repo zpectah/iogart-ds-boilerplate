@@ -1,0 +1,5 @@
+.idea/
+.preview/
+build/
+node_modules/
+yarn-error.log

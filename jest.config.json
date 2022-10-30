@@ -1,0 +1,9 @@
+{
+  "modulePaths": [
+    "/tests/"
+  ],
+  "coveragePathIgnorePatterns": [
+    "/node_modules/"
+  ],
+  "globals": {}
+}

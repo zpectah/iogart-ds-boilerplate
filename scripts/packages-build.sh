@@ -1,0 +1,1 @@
+yarn lerna run build --scope=@iogart-ds-boilerplate/core --scope=@iogart-ds-boilerplate/icons --scope=@iogart-ds-boilerplate/components --scope=@iogart-ds-boilerplate/utils

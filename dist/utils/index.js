@@ -1,0 +1,2 @@
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const i=(...s)=>{const a=e=>e&&typeof e=="object";return s.reduce((e,o)=>(Object.keys(o).forEach(t=>{const c=e[t],r=o[t];Array.isArray(c)&&Array.isArray(r)?e[t]=c.concat(...r):a(c)&&a(r)?e[t]=i(c,r):e[t]=r}),e),{})},l=s=>s.replace(/^\w/,a=>a.toUpperCase());exports.capitalize=l;exports.mergeDeep=i;
+//# sourceMappingURL=index.js.map
