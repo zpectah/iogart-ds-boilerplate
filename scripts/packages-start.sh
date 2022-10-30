@@ -1,1 +1,1 @@
-yarn lerna exec yarn start
+yarn lerna run start --scope=@iogart-ds-boilerplate/core --scope=@iogart-ds-boilerplate/icons --scope=@iogart-ds-boilerplate/components --scope=@iogart-ds-boilerplate/utils

@@ -1,18 +1,22 @@
 import React from 'react';
-import { Button, Tag } from '../../../../dist/components';
-import style from './index.module.styl';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ErrorBoundary } from '../ErrorBoundary';
+import { Dashboard } from '../Dashboard';
+import { Error404 } from '../Error404';
+import { Preview } from '../Preview';
 
-const App = () => {
-
-  return (
-    <div className={style.root}>
-      App preview
-      <br />
-      <Button>Button</Button>
-      <br />
-      <Tag>tag name</Tag>
-    </div>
-  );
-};
+const App = () => (
+  <>
+    <ErrorBoundary>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="preview/:id" element={<Preview />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+      </BrowserRouter>
+    </ErrorBoundary>
+  </>
+);
 
 export default App;
