@@ -56,7 +56,7 @@ declare const Button: (props: ButtonProps) => import("react").DetailedReactHTMLE
     'aria-current'?: boolean | "true" | "false" | "time" | "page" | "step" | "location" | "date" | undefined;
     'aria-describedby'?: string | undefined;
     'aria-details'?: string | undefined;
-    "aria-disabled": (boolean | "true" | "false") | undefined;
+    'aria-disabled'?: (boolean | "true" | "false") | undefined;
     'aria-dropeffect'?: "link" | "none" | "copy" | "execute" | "move" | "popup" | undefined;
     'aria-errormessage'?: string | undefined;
     'aria-expanded'?: (boolean | "true" | "false") | undefined;

@@ -1,11 +1,11 @@
 import { UseButtonStylesProps, UseButtonStylesReturn } from './types';
-import { useStyleProps } from '@iogart-ds-boilerplate/core/src';
+import { useStyleProps, ButtonVariantKeys, ButtonSizeKeys } from '@iogart-ds-boilerplate/core/src';
 import { classNamesFromList } from '@iogart-ds-boilerplate/utils/src';
 import styles from './Button.module.styl';
 
 export const useButtonStyles = ({
-  variant = 'default',
-  size = 'medium',
+  variant = ButtonVariantKeys['default'],
+  size = ButtonSizeKeys['medium'],
   pill,
   loading,
   disabled,
@@ -15,7 +15,7 @@ export const useButtonStyles = ({
 
   return {
     className: classNamesFromList([
-      styles.button,
+      styles.Button,
       styles[size],
       styles[variant],
       pill && styles.pill,
@@ -24,6 +24,7 @@ export const useButtonStyles = ({
       className,
     ]),
     style: Object.assign({}, style),
+    childrenClassName: styles.children,
     preloaderClassName: styles.preloader,
   };
 };

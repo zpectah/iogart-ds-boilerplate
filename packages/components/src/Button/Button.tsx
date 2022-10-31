@@ -10,8 +10,16 @@ const Button = (props: ButtonProps) => {
     className: composedClassName,
     style: composedStyle,
     preloaderClassName,
+    childrenClassName,
   } = useButtonStyles({ className, style, variant, size, pill, loading, disabled });
-  const { children: composedChildren } = useButton({ children, startIcon, endIcon, loading, preloaderClassName });
+  const { children: composedChildren } = useButton({
+    children,
+    startIcon,
+    endIcon,
+    loading,
+    preloaderClassName,
+    childrenClassName,
+  });
 
   return createElement(
     'button',
@@ -19,7 +27,6 @@ const Button = (props: ButtonProps) => {
       className: composedClassName,
       style: composedStyle,
       disabled: disabled,
-      ['aria-disabled']: disabled,
       ...restOf,
     },
     composedChildren

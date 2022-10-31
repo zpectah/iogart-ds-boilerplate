@@ -1,13 +1,20 @@
-const l = (...c) => {
-  const t = (e) => e && typeof e == "object";
-  return c.reduce((e, o) => (Object.keys(o).forEach((s) => {
-    const a = e[s], r = o[s];
-    Array.isArray(a) && Array.isArray(r) ? e[s] = a.concat(...r) : t(a) && t(r) ? e[s] = l(a, r) : e[s] = r;
-  }), e), {});
-}, n = (c) => c.replace(/^\w/, (t) => t.toUpperCase()), i = (c) => [...c].join(" ").replaceAll("  ", " ").replace(/\s+$/g, "");
+const l = (...r) => {
+  const c = (t) => t && typeof t == "object";
+  return r.reduce((t, e) => (Object.keys(e).forEach((n) => {
+    const s = t[n], o = e[n];
+    Array.isArray(s) && Array.isArray(o) ? t[n] = s.concat(...o) : c(s) && c(o) ? t[n] = l(s, o) : t[n] = o;
+  }), t), {});
+}, f = (r, c = !1) => {
+  const t = (o) => (new Array(2).join("0") + o).slice(-2);
+  if (r.indexOf("#") === 0 && (r = r.slice(1)), r.length === 3 && (r = r[0] + r[0] + r[1] + r[1] + r[2] + r[2]), r.length !== 6)
+    throw new Error("Invalid HEX color.");
+  let e = parseInt(r.slice(0, 2), 16), n = parseInt(r.slice(2, 4), 16), s = parseInt(r.slice(4, 6), 16);
+  return c ? e * 0.299 + n * 0.587 + s * 0.114 > 186 ? "#000000" : "#ffffff" : (e = (255 - e).toString(16), n = (255 - n).toString(16), s = (255 - s).toString(16), "#" + t(e) + t(n) + t(s));
+}, p = (r) => r.replace(/^\w/, (c) => c.toUpperCase()), g = (r) => [...r].join(" ").replaceAll("  ", " ").replace(/\s+$/g, "");
 export {
-  n as capitalize,
-  i as classNamesFromList,
+  p as capitalize,
+  g as classNamesFromList,
+  f as invertColor,
   l as mergeDeep
 };
 //# sourceMappingURL=index.mjs.map

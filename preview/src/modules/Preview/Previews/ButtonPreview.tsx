@@ -8,6 +8,12 @@ const ButtonPreview = () => {
     <>
       <br />
       <div>
+        <Button><Close /></Button>
+        <Button variant="outlined"><Close /></Button>
+        <Button variant="contained"><Close /></Button>
+      </div>
+      <br />
+      <div>
         <Button size="small">Button small</Button>
         <Button variant="outlined" size="small">Button small outlined</Button>
         <Button variant="contained" size="small">Button small contained</Button>
@@ -43,6 +49,8 @@ const ButtonPreview = () => {
       <div>
         <Button variant="outlined" loading>Button loading</Button>
         <Button variant="contained" loading>Button loading</Button>
+        <Button variant="outlined" loading pill>Button loading</Button>
+        <Button variant="contained" loading pill>Button loading</Button>
       </div>
       <br />
       <div>

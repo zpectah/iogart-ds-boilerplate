@@ -8,11 +8,12 @@ export const useButton = ({
   endIcon,
   loading,
   preloaderClassName,
+  childrenClassName,
 }: UseButtonProps): UseButtonReturn => {
   const node = (
     <>
       {startIcon && startIcon}
-      {children}
+      <span className={childrenClassName}>{children}</span>
       {endIcon && endIcon}
       {loading && (
         <span className={preloaderClassName}>

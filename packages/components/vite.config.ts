@@ -22,7 +22,14 @@ export default defineConfig({
     sourcemap: true,
     target: 'esnext',
   },
+  css: {
+    modules: {
+      generateScopedName: 'iogart-[local]',
+    },
+  },
   plugins: [
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     react(),
     dts(),
     /**
