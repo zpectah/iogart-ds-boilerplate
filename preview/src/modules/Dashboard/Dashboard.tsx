@@ -1,14 +1,15 @@
 import React from 'react';
-// import { Button, Tag } from '../../../../dist/components';
-import { Layout } from '../../components';
+import { Layout, Container } from '../../components';
 
 const Dashboard = () => {
 
   return (
-    <Layout>
-      Dashboard view
-      <br />
-      tiles with search
+    <Layout title="Iogart DS Preview">
+      <Container>
+        some introduction text ...
+        <br />
+        tiles ?
+      </Container>
     </Layout>
   );
 };

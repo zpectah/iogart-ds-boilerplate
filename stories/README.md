@@ -1,3 +1,0 @@
-# Ladle stories
-
-...

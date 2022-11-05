@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useParams } from 'react-router-dom';
-import { Layout } from '../../components';
-import previews, { PreviewItem } from './Previews';
+import { Layout, Section, Container } from '../../components';
+import previews, { PreviewItem } from '../../previews';
 
 const Preview = () => {
   const params = useParams();
@@ -28,10 +28,32 @@ const Preview = () => {
   }, [ params ]);
 
   return (
-    <Layout>
+    <Layout title={detailMeta?.title}>
       {renderPreviewDetail}
-      <br />
-      {detailMeta && JSON.stringify(detailMeta, null, 2)}
+      <Section title="Properties" container disableDivider>
+        <table>
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Default</th>
+            <th>Description</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>props json</th>
+            <td colSpan={3}>{detailMeta && JSON.stringify(detailMeta, null, 2)}</td>
+          </tr>
+          <tr>
+            <th>children</th>
+            <td><code>`ReactNode`</code></td>
+            <td><code>`null`</code></td>
+            <td>...</td>
+          </tr>
+          </tbody>
+        </table>
+      </Section>
     </Layout>
   );
 };

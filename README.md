@@ -16,7 +16,6 @@ wide customization options.
 - [Jest](https://jestjs.io/), [Testing library](https://testing-library.com/)
 - [Prettier](https://prettier.io/)
 - [ESLint](https://eslint.org/)
-- [Ladle](https://ladle.dev/)
 
 ## Scripts
 
@@ -28,10 +27,6 @@ wide customization options.
 - `% yarn prettier:packages`: Prettier and fix packages
 - `% yarn build:packages`: Build all packages
 - `% yarn start:packages`: Starts development for 'packages/*'
-
-### Ladle
-- `% yarn start:ladle`: Starts preview server with Ladle for development and documentation
-- `% yarn build:ladle`: Builds Ladle package
 
 ## Tests
 More information about the tests can be found [here](./tests/README.md)

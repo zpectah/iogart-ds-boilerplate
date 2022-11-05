@@ -1,14 +1,24 @@
-.layoutRoot
+@import '../../styles/variables';
+
+.Layout
   margin: 0;
   padding: 0;
 
-.layoutContainer
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0;
+  &.alignDefault
+    margin: 0;
+    position: relative;
 
-.variantDefault
-  margin: 0;
+  &.alignCentered
+    margin: 0;
+    /* TODO */
 
-.variantCentered
+
+.Wrapper
+  width: calc(100% - 250px);
+  height: auto;
+  min-height: 100%;
   margin: 0;
+  padding: $spacer-1 0;
+  position: absolute;
+  top: 60px;
+  left: 250px;

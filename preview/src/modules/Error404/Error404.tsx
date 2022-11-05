@@ -1,12 +1,13 @@
 import React from 'react';
-// import { Button, Tag } from '../../../../dist/components';
-import { Layout } from '../../components';
+import { Layout, Container } from '../../components';
 
 const Error404 = () => {
 
   return (
     <Layout variant="centered">
-      Error404 view
+      <Container>
+        Error404 view
+      </Container>
     </Layout>
   );
 };

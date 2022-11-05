@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
-import { default as ButtonPreview } from './ButtonPreview';
-import { default as TagPreview } from './TagPreview';
+import { default as ButtonPreview } from './Button.preview';
+import { default as TagPreview } from './Tag.preview';
+import { default as ColorsPreview } from './Colors.preview';
 
 export type PreviewItem = {
   meta: {
@@ -11,6 +12,13 @@ export type PreviewItem = {
 }
 
 const previews: { [k: string]: PreviewItem } = {
+  colors: {
+    meta: {
+      name: 'colors',
+      title: 'Colors',
+    },
+    node: <ColorsPreview />,
+  },
   button: {
     meta: {
       name: 'button',

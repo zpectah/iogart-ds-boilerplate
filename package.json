@@ -17,8 +17,6 @@
     "prettier:packages": "/bin/sh ./scripts/packages-prettier.sh",
     "start:preview": "/bin/sh ./scripts/preview-start.sh",
     "build:preview": "/bin/sh ./scripts/preview-build.sh",
-    "start:ladle": "/bin/sh ./scripts/ladle-start.sh",
-    "build:ladle": "/bin/sh ./scripts/ladle-build.sh",
     "test": "jest"
   },
   "devDependencies": {
