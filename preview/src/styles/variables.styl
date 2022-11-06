@@ -41,7 +41,57 @@ $spacer-100 = "calc(%s * 10)" % $spacer-1;
   Color
 **/
 
+/* Color: Palette */
+$color-palette-white = rgb(253, 253, 253);
+$color-palette-black = rgb(2, 2, 2);
+$color-palette-red = rgb(211, 47, 47);
+$color-palette-pink = rgb(194, 24, 91);
+$color-palette-purple = rgb(123, 31, 162);
+$color-palette-deepPurple = rgb(81, 45, 168);
+$color-palette-indigo = rgb(48, 63, 159);
+$color-palette-blue = rgb(25, 118, 210);
+$color-palette-lightBlue = rgb(2, 136, 209);
+$color-palette-cyan = rgb(0, 151, 167);
+$color-palette-teal = rgb(0, 121, 107);
+$color-palette-green = rgb(56, 142, 60);
+$color-palette-lightGreen = rgb(104, 159, 56);
+$color-palette-lime = rgb(175, 180, 43);
+$color-palette-yellow = rgb(251, 192, 45);
+$color-palette-amber = rgb(255, 160, 0);
+$color-palette-orange = rgb(245, 124, 0);
+$color-palette-deepOrange = rgb(230, 74, 25);
+$color-palette-brown = rgb(93, 64, 55);
+$color-palette-grey = rgb(97, 97, 97);
+$color-palette-blueGrey = rgb(69, 90, 100);
+
+
 /* Color: Base */
+
+/* primary */
+$color-base-primary-main = rgb(41, 40, 45);
+$color-base-primary-darker-10 = darken($color-base-primary-main, 10%);
+$color-base-primary-darker-20 = darken($color-base-primary-main, 20%);
+$color-base-primary-darker-30 = darken($color-base-primary-main, 30%);
+$color-base-primary-darker-40 = darken($color-base-primary-main, 40%);
+$color-base-primary-darker-50 = darken($color-base-primary-main, 50%);
+$color-base-primary-lighter-10 = lighten($color-base-primary-main, 10%);
+$color-base-primary-lighter-20 = lighten($color-base-primary-main, 20%);
+$color-base-primary-lighter-30 = lighten($color-base-primary-main, 30%);
+$color-base-primary-lighter-40 = lighten($color-base-primary-main, 40%);
+$color-base-primary-lighter-50 = lighten($color-base-primary-main, 50%);
+
+/* secondary */
+$color-base-secondary-main = rgb(98, 93, 96);
+$color-base-secondary-darker-10 = darken($color-base-secondary-main, 10%);
+$color-base-secondary-darker-20 = darken($color-base-secondary-main, 20%);
+$color-base-secondary-darker-30 = darken($color-base-secondary-main, 30%);
+$color-base-secondary-darker-40 = darken($color-base-secondary-main, 40%);
+$color-base-secondary-darker-50 = darken($color-base-secondary-main, 50%);
+$color-base-secondary-lighter-10 = lighten($color-base-secondary-main, 10%);
+$color-base-secondary-lighter-20 = lighten($color-base-secondary-main, 20%);
+$color-base-secondary-lighter-30 = lighten($color-base-secondary-main, 30%);
+$color-base-secondary-lighter-40 = lighten($color-base-secondary-main, 40%);
+$color-base-secondary-lighter-50 = lighten($color-base-secondary-main, 50%);
 
 /* light */
 $color-base-light-main = rgb(219, 211, 208);
@@ -72,34 +122,8 @@ $color-base-dark-lighter-50 = lighten($color-base-dark-main, 50%);
 
 /* Color: Emotions */
 
-/* primary */
-$color-emotion-primary-main = rgb(41, 40, 45);
-$color-emotion--primary-darker-10 = darken($color-emotion-primary-main, 10%);
-$color-emotion-primary-darker-20 = darken($color-emotion-primary-main, 20%);
-$color-emotion-primary-darker-30 = darken($color-emotion-primary-main, 30%);
-$color-emotion-primary-darker-40 = darken($color-emotion-primary-main, 40%);
-$color-emotion-primary-darker-50 = darken($color-emotion-primary-main, 50%);
-$color-emotion-primary-lighter-10 = lighten($color-emotion-primary-main, 10%);
-$color-emotion-primary-lighter-20 = lighten($color-emotion-primary-main, 20%);
-$color-emotion-primary-lighter-30 = lighten($color-emotion-primary-main, 30%);
-$color-emotion-primary-lighter-40 = lighten($color-emotion-primary-main, 40%);
-$color-emotion-primary-lighter-50 = lighten($color-emotion-primary-main, 50%);
-
-/* secondary */
-$color-emotion-secondary-main = rgb(98, 93, 96);
-$color-emotion-secondary-darker-10 = darken($color-emotion-secondary-main, 10%);
-$color-emotion-secondary-darker-20 = darken($color-emotion-secondary-main, 20%);
-$color-emotion-secondary-darker-30 = darken($color-emotion-secondary-main, 30%);
-$color-emotion-secondary-darker-40 = darken($color-emotion-secondary-main, 40%);
-$color-emotion-secondary-darker-50 = darken($color-emotion-secondary-main, 50%);
-$color-emotion-secondary-lighter-10 = lighten($color-emotion-secondary-main, 10%);
-$color-emotion-secondary-lighter-20 = lighten($color-emotion-secondary-main, 20%);
-$color-emotion-secondary-lighter-30 = lighten($color-emotion-secondary-main, 30%);
-$color-emotion-secondary-lighter-40 = lighten($color-emotion-secondary-main, 40%);
-$color-emotion-secondary-lighter-50 = lighten($color-emotion-secondary-main, 50%);
-
 /* success */
-$color-emotion-success-main = rgb(98, 93, 96);
+$color-emotion-success-main = $color-palette-green;
 $color-emotion-success-darker-10 = darken($color-emotion-success-main, 10%);
 $color-emotion-success-darker-20 = darken($color-emotion-success-main, 20%);
 $color-emotion-success-darker-30 = darken($color-emotion-success-main, 30%);
@@ -112,7 +136,7 @@ $color-emotion-success-lighter-40 = lighten($color-emotion-success-main, 40%);
 $color-emotion-success-lighter-50 = lighten($color-emotion-success-main, 50%);
 
 /* info */
-$color-emotion-info-main = rgb(98, 93, 96);
+$color-emotion-info-main = $color-palette-lightBlue;
 $color-emotion-info-darker-10 = darken($color-emotion-info-main, 10%);
 $color-emotion-info-darker-20 = darken($color-emotion-info-main, 20%);
 $color-emotion-info-darker-30 = darken($color-emotion-info-main, 30%);
@@ -125,7 +149,7 @@ $color-emotion-info-lighter-40 = lighten($color-emotion-info-main, 40%);
 $color-emotion-info-lighter-50 = lighten($color-emotion-info-main, 50%);
 
 /* warning */
-$color-emotion-warning-main = rgb(98, 93, 96);
+$color-emotion-warning-main = $color-palette-orange;
 $color-emotion-warning-darker-10 = darken($color-emotion-warning-main, 10%);
 $color-emotion-warning-darker-20 = darken($color-emotion-warning-main, 20%);
 $color-emotion-warning-darker-30 = darken($color-emotion-warning-main, 30%);
@@ -138,7 +162,7 @@ $color-emotion-warning-lighter-40 = lighten($color-emotion-warning-main, 40%);
 $color-emotion-warning-lighter-50 = lighten($color-emotion-warning-main, 50%);
 
 /* error */
-$color-emotion-error-main = rgb(98, 93, 96);
+$color-emotion-error-main = $color-palette-red;
 $color-emotion-error-darker-10 = darken($color-emotion-error-main, 10%);
 $color-emotion-error-darker-20 = darken($color-emotion-error-main, 20%);
 $color-emotion-error-darker-30 = darken($color-emotion-error-main, 30%);
@@ -149,28 +173,4 @@ $color-emotion-error-lighter-20 = lighten($color-emotion-error-main, 20%);
 $color-emotion-error-lighter-30 = lighten($color-emotion-error-main, 30%);
 $color-emotion-error-lighter-40 = lighten($color-emotion-error-main, 40%);
 $color-emotion-error-lighter-50 = lighten($color-emotion-error-main, 50%);
-
-
-/* Color: Palette */
-$color-palette-white = rgb(253, 253, 253);
-$color-palette-black = rgb(2, 2, 2);
-$color-palette-red = rgb(211, 47, 47);
-$color-palette-pink = rgb(194, 24, 91);
-$color-palette-purple = rgb(123, 31, 162);
-$color-palette-deepPurple = rgb(81, 45, 168);
-$color-palette-indigo = rgb(48, 63, 159);
-$color-palette-blue = rgb(25, 118, 210);
-$color-palette-lightBlue = rgb(2, 136, 209);
-$color-palette-cyan = rgb(0, 151, 167);
-$color-palette-teal = rgb(0, 121, 107);
-$color-palette-green = rgb(56, 142, 60);
-$color-palette-lightGreen = rgb(104, 159, 56);
-$color-palette-lime = rgb(175, 180, 43);
-$color-palette-yellow = rgb(251, 192, 45);
-$color-palette-amber = rgb(255, 160, 0);
-$color-palette-orange = rgb(245, 124, 0);
-$color-palette-deepOrange = rgb(230, 74, 25);
-$color-palette-brown = rgb(93, 64, 55);
-$color-palette-grey = rgb(97, 97, 97);
-$color-palette-blueGrey = rgb(69, 90, 100);
 

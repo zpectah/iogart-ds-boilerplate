@@ -1,8 +1,17 @@
-@import '../../../core/src/styles/global';
+@import '../../../core/src/styles/tokens';
+// @import '../../../core/src/styles/global';
 @import '../../../core/src/styles/variables';
 
 @import '../../../core/src/styles/mixins/shapes';
 @import '../../../core/src/styles/mixins/actions';
+
+
+$_button-small-font-size := var(--font-size-small) && .85rem;
+$_button-medium-font-size := var(--font-size-medium) && 1rem;
+
+$_button-large-font-size = var(--font-size-large);
+$_button-large-font-size = $_button-large-font-size is defined ? $_button-large-font-size : 5rem;
+
 
 .Button
   shape-like-button($spacer-1);
@@ -48,7 +57,8 @@
   &.small
     min-width: $button-small-shape-size;
     min-height: $button-small-shape-size;
-    font-size: $button-small-shape-fontSize;
+    // font-size: $button-small-shape-fontSize;
+    font-size: $_button-small-font-size;
     line-height: $object-small-shape-lineHeight;
 
     /* Pill shape */
@@ -59,7 +69,8 @@
   &.medium
     min-width: $button-medium-shape-size;
     min-height: $button-medium-shape-size;
-    font-size: $button-medium-shape-fontSize;
+    // font-size: $button-medium-shape-fontSize;
+    font-size: $_button-medium-font-size;
     line-height: $object-medium-shape-lineHeight;
 
     /* Pill shape */
@@ -70,7 +81,8 @@
   &.large
     min-width: $button-large-shape-size;
     min-height: $button-large-shape-size;
-    font-size: $button-large-shape-fontSize;
+    // font-size: $button-large-shape-fontSize;
+    font-size: $_button-large-font-size;
     line-height: $object-large-shape-lineHeight;
 
     /* Pill shape */
@@ -82,10 +94,10 @@
   /* Variant */
   /* .default is not defined */
   &.outlined
-    shape-outlined($color-emotion-primary-main);
+    shape-outlined($color-base-primary-main);
 
   &.contained
-    shape-contained($color-emotion-primary-main, $color-palette-white);
+    shape-contained($color-base-primary-main, $color-palette-white);
 
 
   /* Loading state */

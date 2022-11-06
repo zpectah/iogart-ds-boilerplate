@@ -4,3 +4,4 @@ export * from './Scrollable';
 export * from './Section';
 export * from './Table';
 export * from './Divider';
+export * from './Tile';
