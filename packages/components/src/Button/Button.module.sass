@@ -1,0 +1,106 @@
+@import '../../core/src/styles/variables'
+@import '../../core/src/styles/mixins'
+
+.Button
+  @include shape-like-button($spacer-1)
+  @include action-on-hover($object-hover-background)
+
+  font-family: $font-family-base
+  font-weight: $font-weight-normal
+
+  border: 1px solid transparent
+  background-color: transparent
+  border-radius: $spacer-025
+  cursor: pointer
+  vertical-align: middle
+
+  .children
+    display: inline-flex
+    align-items: center
+    justify-content: center
+
+  .preloader
+    width: 100%
+    height: 100%
+    display: none
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: 0
+    left: 0
+    color: inherit
+    background-color: transparent
+
+  /* nearby */
+  & + &
+    margin-left: $spacer-05
+
+
+  /* Pill shape */
+  &.pill
+    border-radius: $spacer-15
+
+
+  /* Size */
+  &.small
+    min-width: $button-small-shape-size
+    min-height: $button-small-shape-size
+    font-size: $button-small-shape-fontSize
+    line-height: $object-small-shape-lineHeight
+
+    /* Pill shape */
+    &.pill
+      padding-left: $spacer-125
+      padding-right: $spacer-125
+
+  &.medium
+    min-width: $button-medium-shape-size
+    min-height: $button-medium-shape-size
+    font-size: $button-medium-shape-fontSize
+    line-height: $object-medium-shape-lineHeight
+
+    /* Pill shape */
+    &.pill
+      padding-left: $spacer-135
+      padding-right: $spacer-135
+
+  &.large
+    min-width: $button-large-shape-size
+    min-height: $button-large-shape-size
+    font-size: $button-large-shape-fontSize
+    line-height: $object-large-shape-lineHeight
+
+    /* Pill shape */
+    &.pill
+      padding-left: $spacer-15
+      padding-right: $spacer-15
+
+
+  /* Variant */
+  /* .default is not defined */
+  &.outlined
+    @include shape-outlined($color-base-primary-main)
+
+  &.contained
+    @include shape-contained($color-base-primary-main, $color-palette-white)
+
+
+  /* Loading state */
+  &.loading
+    position: relative
+    overflow: hidden
+
+    .children
+      opacity: 0
+
+    .preloader
+      display: flex
+
+
+  /* Disabled state */
+  &.disabled
+    cursor: not-allowed
+
+    .children
+      opacity: .75
+

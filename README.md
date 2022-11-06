@@ -10,7 +10,8 @@ wide customization options.
 ## Dependencies
 - [Typescript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/), ReactDOM
-- [CSS Modules](https://github.com/css-modules/css-modules) + [Stylus](https://stylus-lang.com/) ([Stylus Cheatsheet](https://devhints.io/stylus))
+- [CSS Modules](https://github.com/css-modules/css-modules)
+- [SASS](https://sass-lang.com/)
 - [Lerna](https://lerna.js.org/)
 - [Vite](https://vitejs.dev/) ([config](https://vitejs.dev/config/))
 - [Jest](https://jestjs.io/), [Testing library](https://testing-library.com/)

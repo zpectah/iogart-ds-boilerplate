@@ -2,7 +2,7 @@ import React, { useMemo, FC, ReactNode } from 'react';
 import { Header } from './Header';
 import { Sidebar } from './Sidebar';
 import { Container } from '../Container';
-import styles from './Layout.module.styl';
+import styles from './Layout.module.sass';
 
 export interface LayoutProps {
   children?: ReactNode;

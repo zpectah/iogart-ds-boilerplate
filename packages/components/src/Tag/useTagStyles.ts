@@ -1,6 +1,6 @@
 import { UseTagStylesProps, UseTagStylesReturn } from './types';
 import { useStyleProps } from '@iogart-ds-boilerplate/core/src';
-import styles from './Tag.module.styl';
+import styles from './Tag.module.sass';
 
 export const useTagStyles = ({ ...rest }: UseTagStylesProps): UseTagStylesReturn => {
   const { className, style } = useStyleProps({ ...rest });

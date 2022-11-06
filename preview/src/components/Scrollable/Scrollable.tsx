@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react';
-import styles from './Scrollable.module.styl';
+import styles from './Scrollable.module.sass';
 
 export interface ScrollableProps {
   children?: ReactNode;

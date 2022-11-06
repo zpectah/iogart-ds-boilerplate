@@ -36,6 +36,6 @@ export default defineConfig({
      * This plugin automatically handles "injecting" <style> to view with component
      * more: https://www.npmjs.com/package/vite-plugin-css-injected-by-js
      */
-    cssInjectedByJsPlugin({ styleId: '@iogart-ds-boilerplate/components' }),
+    cssInjectedByJsPlugin({}),
   ],
 });

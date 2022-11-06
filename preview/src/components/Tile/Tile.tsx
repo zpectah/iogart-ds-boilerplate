@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react';
-import styles from './Tile.module.styl';
+import styles from './Tile.module.sass';
 
 export interface TileProps {
   children?: ReactNode;

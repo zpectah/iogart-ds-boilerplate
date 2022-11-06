@@ -1,0 +1,21 @@
+@mixin shape-like-button($spacer: $spacer-05)
+  margin: 0
+  padding: calc(#{$spacer} / 2) $spacer
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  flex-direction: row
+  flex-wrap: nowrap
+  gap: calc(#{$spacer} / 2)
+  box-sizing: border-box
+  appearance: none
+
+@mixin shape-outlined($color)
+  border-width: 1px
+  border-style: solid
+  border-color: $color
+  color: $color
+
+@mixin shape-contained($bg, $color)
+  color: $color
+  background-color: $bg

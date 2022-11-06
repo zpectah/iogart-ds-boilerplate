@@ -1,7 +1,7 @@
 import React, { createElement, FC, ReactNode, useMemo } from 'react';
 import { Container } from '../Container';
 import { Divider } from '../Divider';
-import styles from './Section.module.styl';
+import styles from './Section.module.sass';
 
 export interface SectionProps {
   children: ReactNode;

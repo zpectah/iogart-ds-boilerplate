@@ -1,0 +1,52 @@
+// @import './global'
+
+@function getRealValue($varName, $value)
+  @if variable-exists($varName)
+    @return var(#{$varName})
+  @else
+    @return $value
+
+
+$font-family-base: getRealValue(--font-family-base, 'Inter, Avenir, Helvetica, Arial, sans-serif')
+$font-weight-normal: getRealValue(--font-weight-normal, 400)
+$font-weight-bold: getRealValue(--font-weight-bold, 600)
+$font-size-base: getRealValue(--font-size-base, 16px)
+
+$spacer-1: getRealValue(--spacer, 1rem)
+
+$border-width-base: getRealValue(--border-width-base, 1px)
+$border-style-base: getRealValue(--border-style-base, solid)
+
+$color-base-primary-main: getRealValue(--color-iogart-primary, rgb(41, 40, 45))
+$color-base-secondary-main: getRealValue(--color-iogart-secondary, rgb(98, 93, 96))
+$color-base-light-main: getRealValue(--color-iogart-warning, rgb(219, 211, 208))
+$color-base-dark-main: getRealValue(--color-iogart-dark, rgb(25, 25, 25))
+
+// $color-emotion-success-main: var(--color-iogart-success, rgb(56, 142, 60)) !default
+$color-emotion-success-main: getRealValue(--color-iogart-success, rgb(56, 142, 60))
+$color-emotion-info-main: getRealValue(--color-iogart-info, rgb(2, 136, 209))
+$color-emotion-warning-main: getRealValue(--color-iogart-warning, rgb(245, 124, 0))
+$color-emotion-error-main: getRealValue(--color-iogart-error, rgb(211, 47, 47))
+
+$color-palette-white: getRealValue(--color-palette-white, rgb(253, 253, 253))
+$color-palette-black: getRealValue(--color-palette-black, rgb(2, 2, 2))
+$color-palette-red: getRealValue(--color-palette-red, rgb(211, 47, 47))
+$color-palette-pink: getRealValue(--color-palette-pink, rgb(194, 24, 91))
+$color-palette-purple: getRealValue(--color-palette-purple, rgb(123, 31, 162))
+$color-palette-deepPurple: getRealValue(--color-palette-deepPurple, rgb(81, 45, 168))
+$color-palette-indigo: getRealValue(--color-palette-indigo, rgb(48, 63, 159))
+$color-palette-blue: getRealValue(--color-palette-blue, rgb(25, 118, 210))
+$color-palette-lightBlue: getRealValue(--color-palette-lightBlue, rgb(2, 136, 209))
+$color-palette-cyan: getRealValue(--color-palette-cyan, rgb(0, 151, 167))
+$color-palette-teal: getRealValue(--color-palette-teal, rgb(0, 121, 107))
+$color-palette-green: getRealValue(--color-palette-green, rgb(56, 142, 60))
+$color-palette-lightGreen: getRealValue(--color-palette-lightGreen, rgb(104, 159, 56))
+$color-palette-lime: getRealValue(--color-palette-lime, rgb(175, 180, 43))
+$color-palette-yellow: getRealValue(--color-palette-yellow, rgb(251, 192, 45))
+$color-palette-amber: getRealValue(--color-palette-amber, rgb(255, 160, 0))
+$color-palette-orange: getRealValue(--color-palette-orange, rgb(245, 124, 0))
+$color-palette-deepOrange: getRealValue(--color-palette-deepOrange, rgb(230, 74, 25))
+$color-palette-brown: getRealValue(--color-palette-brown, rgb(93, 64, 55))
+$color-palette-grey: getRealValue(--color-palette-grey, rgb(97, 97, 97))
+$color-palette-blueGrey: getRealValue(--color-palette-blueGrey, rgb(69, 90, 100))
+

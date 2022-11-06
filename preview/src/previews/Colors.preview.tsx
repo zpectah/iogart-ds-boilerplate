@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../../packages/core/src/styles/utils/index.styl';
 import { Section, Tile } from '../components';
 
 const ColorBlock = ({ className }: { className: string }) => (

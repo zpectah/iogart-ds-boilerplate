@@ -1,7 +1,7 @@
 import { UseButtonStylesProps, UseButtonStylesReturn } from './types';
 import { useStyleProps, ButtonVariantKeys, ButtonSizeKeys } from '@iogart-ds-boilerplate/core/src';
 import { classNamesFromList } from '@iogart-ds-boilerplate/utils/src';
-import styles from './Button.module.styl';
+import styles from './Button.module.sass';
 
 export const useButtonStyles = ({
   variant = ButtonVariantKeys['default'],

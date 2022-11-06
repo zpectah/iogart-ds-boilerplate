@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react';
-import styles from './Container.module.styl';
+import styles from './Container.module.sass';
 
 export interface ContainerProps {
   children?: ReactNode;

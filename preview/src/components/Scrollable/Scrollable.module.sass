@@ -1,0 +1,25 @@
+@import '../../styles/variables'
+
+$scrollbar-width: 30px
+
+.Scrollable
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  overflow: hidden
+
+  .outer
+    width: calc(100% + #{$scrollbar-width})
+    height: 100%
+    position: relative
+    overflow-x: hidden
+    overflow-y: auto
+
+  .inner
+    width: calc(100% - #{$scrollbar-width})
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0

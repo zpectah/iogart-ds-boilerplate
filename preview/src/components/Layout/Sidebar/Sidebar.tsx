@@ -3,7 +3,7 @@ import { Scrollable } from '../../Scrollable';
 import Searchbar from './Searchbar';
 import Navbar from './Navbar';
 import previews from '../../../previews';
-import styles from './Sidebar.module.styl';
+import styles from './Sidebar.module.sass';
 
 const Sidebar = () => {
 
